@@ -1,16 +1,19 @@
-package nameshrinking;
+package longshortlong;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a Full Name :");
-		String s1 = sc.nextLine();
-		System.out.println("Shrink Name : " + UserMainCode.getFormatedString(s1));
-		sc.close();
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter String 1 : ");
+		String s1=in.nextLine();
+		System.out.println("Enter String 2 :");
+		String s2=in.nextLine();
+		System.out.println("Join String : "+UserMainCode.getCombo(s1, s2));
+		in.close();
 	}
+
 
 
 	}
