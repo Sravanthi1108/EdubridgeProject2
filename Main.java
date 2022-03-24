@@ -1,4 +1,4 @@
-package occurancecount;
+package negativestring;
 import java.util.Scanner;
 
 public class Main {
@@ -6,12 +6,9 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Line");
-		String s = sc.nextLine();
-		System.out.println("Enter a Word ");
-		String s1 = sc.next();
-		int count = UserMainCode.countWords(s, s1);
-		System.out.println("No.of words : " + count);
+		System.out.println("Enter the String : ");
+		String str = sc.nextLine();
+		System.out.println("Negative String : " + UserMainCode.negativeString(str));
 		sc.close();
 
 	}
