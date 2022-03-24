@@ -1,4 +1,4 @@
-package startcase;
+package stringprocessing;
 import java.util.Scanner;
 
 public class Main {
@@ -6,11 +6,12 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Line :");
-		String s = sc.nextLine();
-		System.out.println("Upper Case of Starting letter of a given Line : " + UserMainCode.printCapitalized(s));
+		System.out.println("Enter the String : ");
+		String s = sc.next();
+		System.out.println("String : " + UserMainCode.moveX(s));
 		sc.close();
 	
+
 	}
 
 }
