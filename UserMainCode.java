@@ -1,14 +1,20 @@
-package flushcharacter;
+package startcase;
+import java.util.StringTokenizer;
 
 public class UserMainCode {
-	public static String getSpecialChar(String s1) {
+	public static String printCapitalized(String s) {
+		String str;
 		StringBuffer sb = new StringBuffer();
-		for (int i = 0; i < s1.length(); i++) {
-			char a = s1.charAt(i);
-			if (!Character.isAlphabetic(a))
-				sb.append(a);
+		StringTokenizer t = new StringTokenizer(s);
+		while (t.hasMoreTokens()) {
+			String s2 = t.nextToken();
+			String s3 = s2.substring(0, 1);
+			String s4 = s2.substring(1, s2.length());
+			sb.append(s3.toUpperCase()).append(s4).append(" ");
 		}
-		return sb.toString();
+		str = sb.toString();
+		return str;
+
 	}
 
 }
