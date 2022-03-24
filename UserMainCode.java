@@ -1,15 +1,14 @@
-package fetchingmiddlecharacter;
+package flushcharacter;
 
 public class UserMainCode {
-	public static String getMiddleChars(String s) {
+	public static String getSpecialChar(String s1) {
 		StringBuffer sb = new StringBuffer();
-		String s2 = null;
-		if (s.length() % 2 == 0) {
-			sb.append(s.substring(s.length() / 2 - 1, s.length() / 2 + 1));//Training 
+		for (int i = 0; i < s1.length(); i++) {
+			char a = s1.charAt(i);
+			if (!Character.isAlphabetic(a))
+				sb.append(a);
 		}
-		s2 = sb.toString();
-		return s2;
+		return sb.toString();
 	}
+
 }
-
-
