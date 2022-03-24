@@ -1,10 +1,16 @@
-package reversesubstring;
+package replication;
 
 public class UserMainCode {
-	public static String reverseSubstring(StringBuffer sb, int a, int b) {
-		StringBuffer sb1 = new StringBuffer();
-		String ss = sb1.append(sb.substring(a, a + b)).toString(); // String Starting and Ending by using Substring()
-																	// Raja sth an 2 3 nahtsajaR- hts
-		return ss;
-}
+	public static String repeatString(String s,int n)
+		{
+
+	    StringBuffer sb=new StringBuffer();
+	    for(int i=0;i<n;i++)
+	    {
+	      sb.append(s);
+	    }
+
+	    return sb.toString();
+	}
+
 }
