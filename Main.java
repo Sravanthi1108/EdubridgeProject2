@@ -1,18 +1,19 @@
-package replication;
+package playingwithstring;
 import java.util.Scanner;
 public class Main {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the String :");
-	    String s=sc.next();
-	    System.out.println("Enter the NO.Of times to print a String");
-	    int n=sc.nextInt();
-	    String s2=UserMainCode.repeatString(s,n);
-	    System.out.println("Repilcation String : "+s2);
-	    sc.close();
-	}
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter the NO.Of strings in an Aaray : ");
+		int n = Integer.parseInt(in.nextLine());
+		String s1[] = new String[n];
+
+		for (int i = 0; i < n; i++) { // Intput Loop
+			System.out.println("Enter String " + (i + 1) + " : ");
+			s1[i] = in.nextLine();
+		}
+		int a = Integer.parseInt(in.nextLine());
+		System.out.println("String : " + UserMainCode.formString(s1, n, a));// Function Calling
+		in.close();
 	}
 
-
+}
