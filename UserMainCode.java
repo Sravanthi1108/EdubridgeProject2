@@ -1,15 +1,17 @@
-package playingwithstring;
+package occurancecount;
+import java.util.StringTokenizer;
 
 public class UserMainCode {
-	public static String formString(String s1[], int n, int a) { // Function definition
-		StringBuffer sb = new StringBuffer();// declaration of String Buffer
-		for (int i = 0; i < n; i++) {
-			if (s1[i].length() >= a) // Getting N'th Character
-				sb.append(s1[i].substring(a - 1, a));
-			else
-				sb.append("$");
+	public static int countWords(String s, String s1) {
+		int count = 0;
+		String s3;
+		StringTokenizer str = new StringTokenizer(s);
+		while (str.hasMoreTokens()) {
+			s3 = str.nextToken();
+			if (s3.equals(s1))
+				count++;
 		}
-		return sb.toString();
-	}
+		return count;
 
+}
 }
