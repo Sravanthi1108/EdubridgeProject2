@@ -1,10 +1,10 @@
-package stringprocessing;
+package reversesubstring;
 
 public class UserMainCode {
-	public static String moveX(String s) {
-		String s1 = s.replaceAll("[x]", "");
-		String s2 = s.replaceAll("[^x]", "");
-		s1 += s2;
-		return s1 ;
-	}
+	public static String reverseSubstring(StringBuffer sb, int a, int b) {
+		StringBuffer sb1 = new StringBuffer();
+		String ss = sb1.append(sb.substring(a, a + b)).toString(); // String Starting and Ending by using Substring()
+																	// Raja sth an 2 3 nahtsajaR- hts
+		return ss;
+}
 }
